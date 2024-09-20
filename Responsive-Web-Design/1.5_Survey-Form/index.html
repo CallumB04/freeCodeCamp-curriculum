@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1 class="header" id="title">Survey Form</h1>
+    <p class="header" id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    <form id="survey-form" method="post" action="https://register-demon.freecodecamp.org">
+    <fieldset name="infomation">
+      <label for="name" id="name-label">Name<input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+      <label for="email" id="email-label">Email<input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+      <label for="age" id="number-label">Age (optional)<input id="number" name="age" type="number" min=5 max=120 placeholder="How old are you?"/></label>
+      <label for="dropdown">Occupation
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one) </option>
+          <option value=1>Student </option>
+          <option value=2>Part-time worker </option>
+          <option value=3>Full-time worker </option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset name="survey-data">
+      <h4>Do your enjoy our platform?</h4>
+      <label for="yes"><input value="yes" id="yes" type="radio" name="yes-or-no" class="inline" checked /> Yes</label>
+      <label for="no"><input value="no" id="no" type="radio" name="yes-or-no" class="inline" /> No</label>
+      <h4>What have you used our platform for?</h4>
+        <label for="opt-one"><input class="inline" id="opt-one" type="checkbox" name="uses" value=1/> Option 1</label>
+        <label for="opt-two"><input class="inline" id="opt-two" type="checkbox" name="uses" value=2/> Option 2</label>
+        <label for="opt-three"><input class="inline" id="opt-three" type="checkbox" name="uses" value=3/> Option 3</label>
+    </fieldset>
+    <fieldset name="additional-info">
+      <label for="feedback">Any further feedback or suggestions?
+        <textarea id="feedback" name="feedback" rows="6" cols="30" placeholder="I think you could..."></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit"/>
+    </fieldset>
+    </form>
+  </body>
+</html>

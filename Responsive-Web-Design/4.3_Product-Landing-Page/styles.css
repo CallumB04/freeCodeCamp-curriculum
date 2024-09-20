@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: #fcfcfc;
+}
+
+main {
+  margin-top: 100px;
+}
+
+header {
+  background-color: coral;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  main {
+    margin-top: 150px;
+  }
+  header {
+    height: 120px;
+  }
+}
+
+#header-img {
+  height: 100%;
+  padding-left: 5px;
+  float: left;
+}
+#header-title {
+  float: left;
+  color: #111;
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  color: #111;
+  text-decoration: none;
+  float: right;
+  padding-right: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  border-right: 1px dashed #111;
+}
+
+.nav-link:last-of-type {
+  padding-left: 25px;
+  border-left: 1px dashed #111;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 0, 0.7);
+}
+
+#form {
+  width: 100%;
+}
+
+#form h1{
+  text-align: center;
+  color: #111;
+  font-weight: 400;
+  font-family: Helvetica;
+}
+
+#form input {
+  display: block;
+  margin: 15px auto;
+  color: #111;
+}
+
+#form #email {
+  width: 250px;
+  height: 30px;
+  padding-left: 5px;
+}
+
+#form #submit {
+  border: 0;
+  background-color: lightcoral;
+  padding: 8px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#form submit:hover {
+  color: white;
+}
+
+#video-section {
+  width: 100%;
+  margin: 50px 0;
+}
+
+#video {
+  width: 420;
+  aspect-ratio: 16/9;
+  display: block;
+  margin: 0 auto;
+}
+
+#pricing-section {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.price-box {
+  border: 1px solid #111;
+  padding: 15px;
+  background-color: lightcoral;
+  flex: 0.25;
+  border-radius: 3px;
+}
+
+.box-header {
+  text-align: center;
+  background-color: #eee;
+  padding: 3px;
+  font-family: Helvetica;
+  border-radius: 6px;
+}
+
+.box-price {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.box-info {
+  list-style: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.box-info li {
+  margin-bottom: 5px;
+}

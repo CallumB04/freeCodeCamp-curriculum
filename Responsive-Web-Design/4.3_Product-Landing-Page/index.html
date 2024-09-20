@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cheese Shop</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <img id="header-img" src="https://cdn.iconscout.com/icon/free/png-256/free-cheese-icon-download-in-svg-png-gif-file-formats--piece-milk-product-dairy-foods-pack-food-drink-icons-1534540.png?f=webp&w=256" alt="Picture of cheese"/>
+        <p id="header-title">Cheese Shop</p>
+
+        <a class="nav-link" href="#pricing-section">Pricing</a>
+        <a class="nav-link" href="#video-section">How it's made</a>
+        <a class="nav-link" href="#form">Home</a>
+      </nav>
+    </header>
+    <main>
+      <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+        <h1>All the Cheese you'll need</h1>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+        <input type="submit" id="submit" value="Sign up for our newsletter"/>
+      </form>
+
+      <section id="video-section">
+        <iframe id ="video" src="https://www.youtube.com/watch?v=wxm8jTzU_8o"></iframe>
+      </section>
+
+      <section id="pricing-section">
+        <div class="price-box">
+          <h3 class="box-header">Cheddar</h3>
+          <p class="box-price">£20</p>
+          <ul class="box-info">
+            <li>Mature</li>
+            <li>Good cheese</li>
+            <li>Common</li>
+          </ul>
+        </div>
+        <div class="price-box">
+          <h3 class="box-header">Red Leicester</h3>
+          <p class="box-price">£45</p>
+          <ul class="box-info">
+            <li>RED</li>
+            <li>Not Cheddar</li>
+            <li>Yummy</li>
+          </ul>
+        </div>
+        <div class="price-box">
+          <h3 class="box-header">Gouda</h3>
+          <p class="box-price">£20</p>
+          <ul class="box-info">
+            <li>Dutch</li>
+            <li>Still not Cheddar</li>
+            <li>Super yummy</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --section-color1-1: #cfcfcf;
+    --section-color1-2: #d8d8d8;
+    --section-color2-1: #494949;
+    --section-color2-2: #808080;
+    --nav-color: #152238;
+}
+
+body {
+    font-family: Forum, sans-serif;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 65px;
+}
+
+.section-split {
+	position: relative;
+	top: -65px;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 65px;
+    background-color: var(--nav-color);
+
+
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    z-index: 4;
+}
+
+@media (max-width: 350px) {
+    #navbar {
+        height: 110px;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    main {
+        margin-top: 110px;
+    }
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #d8d8d8;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: var(--section-color2)
+}
+
+.section {
+    width: 100vw;
+    height: calc(100vh - 65px);
+}
+
+#welcome-section {
+    background: linear-gradient(45deg, var(--section-color1-1), var(--section-color1-2));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+}
+
+#welcome-section h1 {
+    font-size: 6.5vw;
+}
+
+#welcome-section h2 {
+    font-style: italic;
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+#projects {
+    background: linear-gradient(45deg, var(--section-color2-1), var(--section-color2-2));
+}
+
+#project-list {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    max-width: 60vw;
+    height: 100%;
+
+    list-style: none;
+}
+
+#project-list .project-tile {
+    color: white;
+    width: 20vw;
+    height: 20vw;
+    border: 1px solid var(--nav-color);
+    position: relative;
+}
+
+#project-list .project-tile img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position:absolute;
+    top: 0;
+}
+
+#project-list a {
+    text-decoration: none;
+}
+
+#project-list h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    background-color: #f3f3f3;
+    color: #111;
+    font-size: 2vw;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+
+#socials {
+    background: linear-gradient(45deg, var(--section-color1-1), var(--section-color1-2));
+}

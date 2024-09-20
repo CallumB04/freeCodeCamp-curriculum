@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <h2>Python Tutorial</h2>
+        <a class="nav-link" href="#conditions">Conditions</a>
+        <a class="nav-link" href="#variables">Variables</a>
+        <a class="nav-link" href="#data_types">Data Types</a>
+        <a class="nav-link" href="#hello_world">Hello World</a>
+        <a class="nav-link" href="#introduction_to_python">Intro</a>
+      </nav>
+      
+	  <div class="section-split" id="introduction_to_python"></div>
+	  
+      <section class="main-section">
+        <header class="section-header">Introduction to Python</header>
+        <img id="python-logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Python_logo_01.svg"/>
+        <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. </p>
+        <p>Not surprisingly, given its accessible and versatile nature, Python is among the top five most popular programming languages in the world. Python is used by Wikipedia, Google, Yahoo!, CERN and NASA, and many more world-famous organisations.</p>
+        <p>Some of the most-common uses for Python includes:</p>
+        <ul>
+          <li>AI & Machine Learning</li>
+          <li>Data Analytics</li>
+          <li>Web Development</li>
+          <li>Search Engine Optimisation</li>
+          <li>Blockchain</li>
+          <li>Game Development</li>
+          <li>Automation</li>
+        </ul>
+      </section>
+	  
+	  <div class="section-split" id="hello_world"></div>
+	  
+      <section class="main-section">
+        <header class="section-header">Hello world</header>
+        <p>To get started with Python, we will write a message to the console:</p>
+        <code class="code-block">
+          print("Hello, world!")
+        </code>
+        <p>The <code>print()</code> function allows for the output of a value to the console, in this line of code we are writing "Hello, World".
+      </section>
+	  
+	  <div class="section-split" id="data_types"></div>
+	  
+      <section class="main-section">
+        <header class="section-header">Data Types</header>
+        <p>In Python there are many data types, each with their own purpose and uses:</p>
+        <code class="code-block">
+          <span class="comment">## "Hello, World" -> String (A concatenation of letters, numbers and/or symbols)<br>
+          ## 8 --------------> Integer (A whole number)<br>
+          ## 2.85 -----------> Float (A decimal point number)<br>
+          ## True/False -----> Boolean (Binary value. True/False or 1/0)<br>
+          ## 'A' ------------> Character (Singular letter/number/symbol value)</span>
+        </code>
+      </section>
+	  
+	  <div class="section-split" id="variables"></div>
+	  
+      <section class="main-section">
+        <header class="section-header">Variables</header>
+        <p>One way we hold data in Python is through the use of variables. A variable holds a singular value of a specific data type and can be referenced and altered throughout a program. In python, variables need to be assigned a value when they are created, even if this value happens to be empty.</p>
+        <p>Examples of variables:</P>
+        <code class="code-block">
+          name = "Callum"<br>
+          age = 20 <br>
+          pi = 3.14 <br>
+          raining = True <br>
+          grade = "A"
+        </code>
+        <p>There are also many different ways of writing variables, the two most commonly used are:</p>
+        <ul>
+          <li>Camel Case -> <code>isRainingToday = False</code>... All words capitalised aside from first word.</li>
+          <li>Snake Case -> <code>first_name = "Noah"</code>... All lower-case, underscore seperating words.
+        </ul>
+      </section>
+	  
+	  <div class="section-split" id="conditions"></div>
+	  
+      <section class="main-section">
+        <header class="section-header">Conditions</header>
+        <p>In Python, there are a built-in list of keywords that all serve different functions. One of them is the <code class="keyword">if</code> keyword. This allows for logical operations through something known as conditional statements:</p>
+        <code class="code-block">
+          if (condition):<br>
+          <span class="indent">do this</span><br><br>
+          elif (another condition):<br>
+          <span class="indent">do this instead</span><br><br>
+          else:<br>
+          <span class="indent">do this if no condition was True</span>
+        </code>
+        <p>A condition doesnt always need to have an 'elif' or 'else' statement, it can just be a singular condition. However, this allows for multiple possibilities to be checked at once. Below are a few examples:
+
+        <ul>
+          <li>
+            <p>Singular condition:</p>
+            <code class="code-block">
+              weather = "raining"<br><br>
+
+              if weather == "raining": <span class="comment">## == -> 'is equal to'</span><br>
+              <span class="indent">print("It's raining!")</span>
+            </code>
+          </li>
+          <li>
+            <p>If + else:</p>
+            <code class="code-block">
+              age = 18<br><br>
+              
+              if age < 18:<br>
+              <span class="indent">print("You cannot drink alcohol!")</span><br><br>
+              else: <span class="comment">## age is not less than 18</span><br>
+              <span class="indent">print("You are allowed to drink alcohol!")</span>
+            </code>
+          </li>
+          <li>
+            <p>If, elif + else:</p>
+            <code class="code-block">
+              age = 21<br><br>
+
+              if age < 18:<br>
+              <span class="indent">print("You are too young to gamble!")</span><br><br>
+
+              elif age >= 18 and age < 25:<span class="comment"> ## >= -> 'bigger OR equal to' ... and -> checks multiple conditions are both True</span><br>
+              <span class="indent">print("You need to show ID!")</span><br><br>
+
+              else:<br>
+              <span class="indent">print("You can gamble without any issues!")</span>
+            </code>
+          </li>
+        <ul>
+      </section>
+    </main>
+  </body>
+</html>
