@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    color: #222;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+.converter {
+    background-color: burlywood;
+    width: min(450px, 70%);
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 30px;
+
+    border-radius: 15px;
+    border: 1px dashed #222;
+}
