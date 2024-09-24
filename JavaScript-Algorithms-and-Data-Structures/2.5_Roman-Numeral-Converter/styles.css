@@ -13,11 +13,12 @@ main {
     width: 100%;
     height: 100%;
     padding: 50px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
     text-align: center;
-    
+    color: #111;
 }
 
 .converter {
@@ -28,5 +29,55 @@ h1 {
     padding: 30px;
 
     border-radius: 15px;
-    border: 1px dashed #222;
+    border: 2px dashed #222;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.number-input {
+    width: 70%;
+    height: 30px;
+    border: 1px solid #222;
+    margin-bottom: 15px;
+    background-color: beige;
+}
+
+.convert-btn {
+    width: 35%;
+    height: 30px; 
+    background-color: beige;
+    border: 2px solid bisque;
+    cursor: pointer;
+}
+
+.convert-btn:hover {
+    background-color: bisque;
+}
+
+.output-box {
+    width: 80%;
+    height: 60px;
+    margin-top: 30px;
+    background-color: beige;
+    border: 3px solid #222;
+    text-align: center;
+
+    display: none;
+}
+
+.output-box #output {
+    font-weight: bold;
+    font-size: 1.4rem;;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 13px;
 }
