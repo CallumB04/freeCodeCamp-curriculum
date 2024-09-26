@@ -143,7 +143,3 @@ main {
     position: absolute;
     width: 100%;
 }
-
-#socials {
-    background: linear-gradient(45deg, var(--section-color1-1), var(--section-color1-2));
-}
