@@ -5,6 +5,6 @@ This course teaches the fundamentals of Javascript and how to use it, alongside 
 ### Indepedent Projects
 - [Palindrome Checker](./1.8_Palindrome-Checker/)✅
 - [Roman Numeral Converter](./2.5_Roman-Numeral-Converter/)✅
-- Telephone Number Validator🔜
+- [Telephone Number Validator](3.5_Telephone-Number-Validator/)🔜
 - Cash Register🔜
 - Pokemon Search App🔜
