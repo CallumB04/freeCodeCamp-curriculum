@@ -3,8 +3,11 @@ const resultsDiv = document.getElementById("results-div");
 const checkBtn = document.getElementById("check-btn");
 const clearBtn = document.getElementById("clear-btn");
 
-function checkNumber(number) {
-    
+function checkNumber(input) {
+    const regex = /^(?:1)?\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/g;
+    let bracketCount = (input.split("(").length - 1) + (input.split(")").length - 1);
+
+    return regex.test(input) && bracketCount % 2 == 0;
 }
 
 function displayResult() {
