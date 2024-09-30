@@ -56,11 +56,21 @@ h1 {
     border: 1px solid black;
     height: 35px;
     padding: 10px;
+    margin-bottom: 5px;
 }
 
 .phone-screen .results-div {
     color: var(--text-color);
+    margin: 5px;
     overflow-y: auto;
+}
+
+.phone-screen .results-div::-webkit-scrollbar {
+    width: 10px;
+}
+
+.phone-screen .results-div::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to top right, #bdd2e4, #ccdceb);
 }
 
 .phone .phone-bottom {
