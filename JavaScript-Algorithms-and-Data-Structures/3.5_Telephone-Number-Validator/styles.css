@@ -63,6 +63,26 @@ h1 {
     color: var(--text-color);
     margin: 5px;
     overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+}
+
+.phone-screen .results-div p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.phone-screen .results-div .invalid {
+    color: red;
+}
+
+.phone-screen .results-div .valid {
+    color: green;
+}
+
+.phone-screen .results-div .checked {
+    font-weight: bold;
+    color: var(--text-color);
 }
 
 .phone-screen .results-div::-webkit-scrollbar {
